@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none; 
+}
+
+body
+{
+    background: linear-gradient(90deg, #4AB193, #D17824);
+    padding: 20px;
+}
+
+.container-all
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px; 
+    display: flex; 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-form
+{
+    width: 80%;
+    padding: 40px;
+    background: rgb(250, 240, 240); 
+}
+
+.title
+{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: rgb(158, 154, 154); 
+}
+
+label
+{
+    display: block; 
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300px;
+    color: rgb(158, 154, 154); 
+}
+
+input[type = "text"],
+input[type = "password"]
+{
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,0); 
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    color: #41A660; 
+    font-size: 16px;
+}
+
+input[type = "submit"]
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    color: white;
+    border: 0px;
+    background: linear-gradient(90deg, #F07029, #E4962E);
+    font-weight: 300;
+    cursor:pointer; 
+    font-size: 18px; 
+}
+
+input[type = "submit"]:hover
+{
+    background: linear-gradient(90deg, #E4962E, #F07029);
+
+}
+
+.text-footer
+{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(158, 154, 154); 
+    font-weight: 300px;
+}
+
+.text-footer a
+{
+    color: #C40F0F;
+    text-align: center;
+    font-weight: 500px; 
+}
+
+/*Imagen del lado derecho*/
+
+.container-imagen
+{
+    width: 100;
+    background-image: url(../imagenes/imagenlogin.png); 
+    background-position: center;
+    background-position: cover;
+    padding: 40px;
+    position: relative; 
+}
+
+.capa
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.title-description
+{
+    position: relative;
+    text-align: center; 
+    top: 120px;
+    color: white;
+    font-weight: 300;
+    font-size: 40px; 
+}
+
+/*Estilo de mensaje de error*/
+
+.msg-error
+{
+    color: red;
+    display: block;
+    margin-top: 10px; 
+}
+
+/*Estilo de pagina Bienvenida*/
+.container-welcome
+{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    background: white;
+    border-radius: 20px; 
+}
+
+.title-welcome
+{
+    font-weight: 400px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.title-welcome b
+{
+    color: #F07029;
+}
+
+.close-sesion
+{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #4AB193, #D17824);
+    font-size: 20px;
+    font-weight: 300px;
+    color: white; 
+}
+
+.close-sesion:hover
+{
+    background: linear-gradient(90deg,  #D17824, #4AB193);
+}
+
+/*Responive*/
+@media screen and (max-width:800px)
+{
+    .container-imagen
+    {
+        display: none;
+    }
+
+    .container-form
+    {
+        margin:auto;
+        width: 100%;
+        background: white; 
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .title-welcome
+    {
+    font-weight: 400px;
+    font-size: 30px;
+    margin-top: 20px;
+    }
+
+}
