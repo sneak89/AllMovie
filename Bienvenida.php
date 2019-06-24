@@ -12,7 +12,7 @@
     <div class="container-welcome">
 
         <h1 class="title-welcome"> Bienvenido a<b> All Movies</b></h1>
-        <a href="index.php" class="close-sesion">Cererar Sesión</a>
+        <a href="index.php" class="close-sesion">Cerrar Sesión</a>
 
     </div>    
 

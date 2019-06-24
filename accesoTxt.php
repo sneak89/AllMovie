@@ -1,7 +1,7 @@
 <?php
 
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+$email = str_replace(" ", "", $_POST['email']);
+$password = str_replace(" ", "", $_POST['password']);
 
     $passwordCompare = "Contraseña:$password";
 
@@ -52,6 +52,4 @@
         location.href = 'index.php';
         </script>" ;
     }
-
-
 ?>
