@@ -1,10 +1,12 @@
 <?php
 
+//Funcion de cadenas 
 $email = str_replace(" ", "", $_POST['email']);
 $password = str_replace(" ", "", $_POST['password']);
 
     $passwordCompare = "Contraseña:$password";
 
+    //Condicional
     if(empty(trim($_POST['email'])))
     {
         echo "<script> alert('Ingrese su correo'); 
@@ -12,13 +14,16 @@ $password = str_replace(" ", "", $_POST['password']);
         </script>" ;
 
     }
+    //metodo o funcion fopen
     elseif($archivo = fopen("usuarios/$email.txt", "r"))
     {
         $i = 0;
+        //Ciclo repetitivo 
         while(!feof($archivo))
         {
             $i++;
             $linea = fgets($archivo);
+            //arreglo
             $contenido[$i] = explode ('|', trim($linea));
             $archivo++;
 
